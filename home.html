@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #217dbb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍽 Restaurant Menu</h1>
+        <p>Pizza (₹250) <input type="number" id="pizzaQty" min="0" value="0"></p>
+        <p>Burger (₹150) <input type="number" id="burgerQty" min="0" value="0"></p>
+        <p>Pasta (₹200) <input type="number" id="pastaQty" min="0" value="0"></p>
+        <p>Sandwich (₹120) <input type="number" id="sandwichQty" min="0" value="0"></p>
+        
+        <button onclick="calculateBill()">🧾 Total Bill</button>
+    </div>
+
+    <script src="restaurant.js"></script>
+
+</body>
+</html>
